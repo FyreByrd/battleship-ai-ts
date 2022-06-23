@@ -1,0 +1,22 @@
+{
+    "name": "battleship-ai",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+      "test": "node test/index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/FyreByrd/battleship-ai-js.git"
+    },
+    "author": "Aidan Jones",
+    "license": "GPL-3.0",
+    "bugs": {
+      "url": "https://github.com/FyreByrd/battleship-ai-js/issues"
+    },
+    "homepage": "https://github.com/FyreByrd/battleship-ai-js#readme",
+    "dependencies": {},
+    "devDependencies": {}
+}
