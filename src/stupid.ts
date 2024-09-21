@@ -20,6 +20,9 @@ export default class StupidAI implements BattleshipAI {
   guess(getResult: (coords: Coords) => GuessResult): GuessResult {
     const i = randInt(0, this.guesses.length - 1);
     const r = getResult(this.guesses[i]);
+    if (this.guesses.length < 1) {
+      throw new Error('AI out of guesses!');
+    }
     this.guesses.slice(i, 1);
     return r;
   }
