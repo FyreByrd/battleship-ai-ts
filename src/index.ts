@@ -1,4 +1,4 @@
-import BattleshipAI, { Coords, GuessResult, equals, neighbors } from './utils';
+import BattleshipAI, { Coords, GuessResult, equals, neighbors, i2coords, coords2i } from './utils';
 import StupidAI from './stupid';
 import BasicAI from './basic';
 
@@ -9,5 +9,7 @@ export {
   StupidAI,
   BasicAI,
   equals as coordEquals,
-  neighbors as coordNeighbors
+  neighbors as coordNeighbors,
+  i2coords,
+  coords2i
 };

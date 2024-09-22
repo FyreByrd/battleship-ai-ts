@@ -15,15 +15,23 @@ export type Coords = {
 
 export function neighbors(c: Coords): (Coords | null)[] {
   return [
-    c.y > 1 ? { x: c.x, y: c.y - 1 } : null,  // north
+    c.y > 1 ? { x: c.x, y: c.y - 1 } : null, // north
     c.x < 10 ? { x: c.x + 1, y: c.y } : null, // east
     c.y < 10 ? { x: c.x, y: c.y + 1 } : null, // south
-    c.x > 1 ? { x: c.x - 1, y: c.y } : null   // west
+    c.x > 1 ? { x: c.x - 1, y: c.y } : null // west
   ];
 }
 
 export function equals(a: Coords, b: Coords): boolean {
   return a.x === b.x && a.y === b.y;
+}
+
+export function i2coords(i: number): Coords {
+  return { x: (i % 10) + 1, y: Math.floor(i / 10) + 1 };
+}
+
+export function coords2i(c: Coords): number {
+  return c.y * 10 + c.x;
 }
 
 export default interface BattleshipAI {

@@ -10,7 +10,4 @@ Contains:
 
 - StupidAI: an AI that just guesses a random coordinate
 - BasicAI: an AI that uses a basic, 2-stage Hunt/Target algorithm
-
-Todo:
-
-- advancedAI
+- AdvancedAI: an AI that uses a Probability Density Function to aid a 2-stage Hunt/Target algorithm
