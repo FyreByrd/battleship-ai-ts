@@ -13,6 +13,20 @@ export type Coords = {
   y: number;
 };
 
+export function neighbors(c: Coords): Coords[] {
+  const ret = [];
+  if (c.x > 1) ret.push({ x: c.x - 1, y: c.y });
+  if (c.x < 10) ret.push({ x: c.x + 1, y: c.y });
+  if (c.y > 1) ret.push({ x: c.x, y: c.y - 1 });
+  if (c.y < 10) ret.push({ x: c.x, y: c.y + 1 });
+
+  return ret;
+}
+
+export function equals(a: Coords, b: Coords): boolean {
+  return a.x === b.x && a.y === b.y;
+}
+
 export default interface BattleshipAI {
   /**
    * resets the AI

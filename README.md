@@ -9,8 +9,8 @@ All three algorithms are heavily influenced by [this article about Battleship st
 Contains:
 
 - StupidAI: an AI that just guesses a random coordinate
+- BasicAI: an AI that uses a basic, 2-stage Hunt/Target algorithm
 
 Todo:
 
-- basicAI
 - advancedAI
