@@ -1,5 +1,4 @@
-import BattleshipAI, { randInt } from './utils';
-import { Coords, GuessResult } from './utils';
+import BattleshipAI, { randInt, Coords, GuessResult } from './utils';
 
 /**
  * AI that guesses a random coordinate
