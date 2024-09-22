@@ -66,9 +66,11 @@ export default class BasicAI implements BattleshipAI {
     if (r !== GuessResult.Miss && r !== GuessResult.Gameover) {
       const nCoords = neighbors(c);
       nCoords.forEach((n) => {
-        const i = this.all.findIndex((a) => equals(a, n));
-        if (i >= 0 && !this.toTry.includes(i)) {
-          this.toTry.push(i);
+        if (n) {
+          const i = this.all.findIndex((a) => equals(a, n));
+          if (i >= 0 && !this.toTry.includes(i)) {
+            this.toTry.push(i);
+          }
         }
       });
     }
